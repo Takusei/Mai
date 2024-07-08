@@ -1,8 +1,8 @@
 <template>
-  <timeLine/>
+  <tab/>
 </template>
 
 <script setup>
-import timeLine from '../components/timeLine.vue'
+import tab from '../components/tab.vue'
 
 </script>

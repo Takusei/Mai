@@ -1,4 +1,4 @@
-const year2022 = [
+export const year2022 = [
   {
     color: 'cyan',
     year: '2022.01.01',
@@ -62,7 +62,7 @@ const year2022 = [
   },
 ]
 
-const year2023 = [
+export const year2023 = [
   {
     color: 'cyan',
     year: '2023.01.15',
@@ -105,7 +105,7 @@ const year2023 = [
   },
 ]
 
-const year2024 = [
+export const year2024 = [
   {
     color: 'cyan',
     year: '2024.01.31',
@@ -121,10 +121,8 @@ const year2024 = [
     year: '2024.07.06',
     title: '横瀬ホタル',
   },
-]
-
-export const travelOptions = [
-  ...year2022,
-  ...year2023,
-  ...year2024,
+  {
+    color: 'green',
+    year: 'Now',
+  },
 ]

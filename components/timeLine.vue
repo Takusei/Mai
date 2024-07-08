@@ -25,8 +25,10 @@
 </template>
 
 <script setup>
-import {travelOptions} from '../utils/options.ts'
 import {randomColor} from 'randomcolor'
 
-const years = travelOptions
+const props = defineProps({
+  travelOptions: Array,
+})
+
 </script>
