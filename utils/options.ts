@@ -1,4 +1,4 @@
-export const year2022 = [
+const year2022 = [
   {
     color: 'cyan',
     year: '2022.01.01',
@@ -62,7 +62,7 @@ export const year2022 = [
   },
 ]
 
-export const year2023 = [
+const year2023 = [
   {
     color: 'cyan',
     year: '2023.01.15',
@@ -105,7 +105,7 @@ export const year2023 = [
   },
 ]
 
-export const year2024 = [
+const year2024 = [
   {
     color: 'cyan',
     year: '2024.01.31',
@@ -126,3 +126,5 @@ export const year2024 = [
     year: 'Now',
   },
 ]
+
+export { year2022, year2023, year2024 }
