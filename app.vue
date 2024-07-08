@@ -3,17 +3,17 @@
     <v-timeline-item
       v-for="(option, i) in travelOptions"
       :key="i"
-      :dot-color="option.color"
+      :dot-color="randomColor()"
       size="small"
     >
       <template v-slot:opposite>
         <div
-          :class="`pt-1 headline font-weight-bold text-${option.color}`"
+          :class="`pt-1 headline font-weight-bold text-${randomColor()}`"
           v-text="option.year"
         ></div>
       </template>
       <div>
-        <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${option.color}`">
+        <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${randomColor()}`">
           {{  option.title }}
         </h2>
         <div>
@@ -26,6 +26,7 @@
 
 <script setup>
 import {travelOptions} from './utils/options.ts'
+import {randomColor} from 'randomcolor'
 
 const years = travelOptions
 </script>
