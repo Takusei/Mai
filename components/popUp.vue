@@ -3,17 +3,19 @@
     <v-dialog
       v-model="dialog"
       width="auto"
+      fullscreen
     >
       <v-card
+        style="padding-top: 40vh;"
         max-width="400"
-        prepend-icon="mdi-update"
-        text="Your application will relaunch automatically after the update is complete."
-        title="Update in progress"
+        prepend-icon="mdi-heart-circle-outline"
+        text="This is the webpage I created for you, Mai. I hope you like it."
+        title="Dear Mai"
       >
         <template v-slot:actions>
           <v-btn
             class="ms-auto"
-            text="Ok"
+            text="Continue"
             @click="clicked"
           ></v-btn>
         </template>
@@ -28,6 +30,8 @@ const emit = defineEmits(['closePopUp'])
 
 const clicked = () => {
   dialog.value = false
+  // const audio = new Audio('/Perfect.mp3');
+  // audio.play();
   emit('closePopUp')
 }
 
