@@ -1,5 +1,5 @@
 <template>
-  <v-container
+  <v-container v-if="!showTab"
     class="bg-surface-variant full-screen"
   >
     <v-row
@@ -22,13 +22,15 @@
       </v-col>
     </v-row>
   </v-container>
+  
+  <tab v-if="showTab"/>
 </template>
 
 <script setup lang="ts">
 import { Typed } from "@duskmoon/vue3-typed-js";
 import type { TypedOptions } from "@duskmoon/vue3-typed-js";
 import {topPage, daysTo2022} from '../utils/options'
-
+import Tab from './tab.vue'
 const options: TypedOptions = {
   strings: topPage,
   loop: false,
@@ -38,11 +40,13 @@ const options: TypedOptions = {
 };
 
 const dateCount = ref(daysTo2022)
+const showTab = ref(false)
 
 const clickBtn = () => {
   console.log('clicked')
-  const audio = new Audio('/sound.mp3');
+  const audio = new Audio('/Perfect.mp3');
   audio.play();
+  showTab.value = true
 }
 </script>
 
