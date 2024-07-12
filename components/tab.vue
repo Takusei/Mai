@@ -11,6 +11,11 @@
     </v-tabs>
   </v-card>
   <TimeLine :travelOptions="getTravelOptions(tab)" />
+  <v-col align="center" 
+        justify="center">
+    <v-btn v-if="displayBtn" @click="clicked">Click Me</v-btn>
+  </v-col>
+
 </template>
 
 <script setup>
@@ -29,6 +34,15 @@ const getTravelOptions = (year) => {
   } else {
     console.log('No data found')
   }
+}
+
+const displayBtn = computed(() => {
+  return tab.value === 2024
+})
+
+const clicked = () => {
+  console.log('clicked')
+  // TODO: add dialog here
 }
 
 </script>

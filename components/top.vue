@@ -44,8 +44,8 @@ const showTab = ref(false)
 
 const clickBtn = () => {
   console.log('clicked')
-  const audio = new Audio('/Perfect.mp3');
-  audio.play();
+  // const audio = new Audio('/Perfect.mp3');
+  // audio.play();
   showTab.value = true
 }
 </script>
