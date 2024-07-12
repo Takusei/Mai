@@ -18,9 +18,10 @@
 <script setup lang="ts">
 import { Typed } from "@duskmoon/vue3-typed-js";
 import type { TypedOptions } from "@duskmoon/vue3-typed-js";
+import {topPage} from '../utils/options'
 
 const options: TypedOptions = {
-  strings: ["hello", "World", "This is vue3-typed-js"],
+  strings: topPage,
   loop: false,
   typeSpeed: 30,
 };

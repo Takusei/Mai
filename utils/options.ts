@@ -127,4 +127,11 @@ const year2024 = [
   },
 ]
 
-export { year2022, year2023, year2024 }
+const daysTo2022 = Math.floor((new Date().getTime() - new Date('2022/01/01').getTime()) / (1000 * 60 * 60 * 24));
+
+const topPage = [
+  'こんにちは！サイです',
+  `一緒にいてもう${daysTo2022}日です`,
+]
+
+export { year2022, year2023, year2024, topPage }
