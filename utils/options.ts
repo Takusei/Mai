@@ -130,8 +130,17 @@ const year2024 = [
 const daysTo2022 = Math.floor((new Date().getTime() - new Date('2022/01/01').getTime()) / (1000 * 60 * 60 * 24));
 
 const topPage = [
-  'こんにちは！サイです',
-  `一緒にいてもう${daysTo2022}日です`,
+  'Hello！サイです',
+  `一緒にいてもう ^1000 ${daysTo2022}日です`,
+  '君の笑顔は、私の一日を明るくします',
+  `これからも一緒に過ごす日々を楽しみにしています`,
+  '君と過ごす時間は、いつも特別です',
+  `君との毎日は、私の宝物です`,
+  '君がいるだけで、私の世界は輝いて見えます',
+  `これからも君を幸せにするために、全力を尽くします`,
+  '君と一緒にいることが、私の幸せです',
+  `君と過ごす未来を想像すると、ワクワクします`,
+  'Please click the button here'
 ]
 
-export { year2022, year2023, year2024, topPage }
+export { year2022, year2023, year2024, topPage, daysTo2022 }
