@@ -2,7 +2,7 @@
   <div class="text-center pa-4">
     <v-dialog
       v-model="dialog"
-      width="auto"
+      width="100%"
       fullscreen
     >
       <v-card
