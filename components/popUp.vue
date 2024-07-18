@@ -30,8 +30,8 @@ const emit = defineEmits(['closePopUp'])
 
 const clicked = () => {
   dialog.value = false
-  // const audio = new Audio('/Perfect.mp3');
-  // audio.play();
+  const audio = new Audio('/Mai/Perfect.mp3');
+  audio.play();
   emit('closePopUp')
 }
 

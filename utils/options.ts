@@ -1,3 +1,5 @@
+const daysTo2022 = Math.floor((new Date().getTime() - new Date('2022/01/01').getTime()) / (1000 * 60 * 60 * 24));
+
 const year2022 = [
   {
     color: 'cyan',
@@ -123,11 +125,9 @@ const year2024 = [
   },
   {
     color: 'green',
-    year: 'Now',
+    year: `${daysTo2022} Days Now`,
   },
 ]
-
-const daysTo2022 = Math.floor((new Date().getTime() - new Date('2022/01/01').getTime()) / (1000 * 60 * 60 * 24));
 
 const topPage = [
   'Hello！サイです',
@@ -143,4 +143,6 @@ const topPage = [
   'Please click the button here'
 ]
 
-export { year2022, year2023, year2024, topPage, daysTo2022 }
+const ProposeText = ['Will you ^500 marry me?  ^1000\n `僕のお嫁さんになってください！`']
+
+export { year2022, year2023, year2024, topPage, daysTo2022, ProposeText }

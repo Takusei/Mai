@@ -43,9 +43,6 @@ const dateCount = ref(daysTo2022)
 const showTab = ref(false)
 
 const clickBtn = () => {
-  console.log('clicked')
-  // const audio = new Audio('/Perfect.mp3');
-  // audio.play();
   showTab.value = true
 }
 </script>
