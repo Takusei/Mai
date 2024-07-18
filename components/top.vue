@@ -34,7 +34,7 @@ import Tab from './tab.vue'
 const options: TypedOptions = {
   strings: topPage,
   loop: false,
-  typeSpeed: 10,
+  typeSpeed: 90,
   backSpeed: 1,
   fadeOut: true,
 };

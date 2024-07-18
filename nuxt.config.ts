@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-07-08',
 
   app: {
-    baseURL: '/nuxt-github-pages/', // baseURL: '/<repository>/'
+    baseURL: '/Mai/', // baseURL: '/<repository>/'
     buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
   }
 })
