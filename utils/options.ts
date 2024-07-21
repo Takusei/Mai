@@ -125,6 +125,11 @@ const year2024 = [
   },
   {
     color: 'green',
+    year: '2024.07.13',
+    title: '一緒にコロナ',
+  },
+  {
+    color: 'green',
     year: `${daysTo2022} Days Now`,
   },
 ]
