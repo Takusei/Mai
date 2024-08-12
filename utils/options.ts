@@ -130,6 +130,11 @@ const year2024 = [
   },
   {
     color: 'green',
+    year: '2024.08.10',
+    title: '軽井沢教室ライト',
+  },
+  {
+    color: 'green',
     year: `${daysTo2022} Days Now`,
   },
 ]
